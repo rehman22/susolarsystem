@@ -15,12 +15,12 @@ console.log()
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "http://localhost:3000/email",
+                url: "https://susolar.herokuapp.com//email",
                 type: "POST",
                 data: {
                     name: name,
                     email: email,
-                     
+                    subject: subject,
                     message: message
                 },
                 cache: false,
@@ -40,7 +40,7 @@ console.log()
                             .append("</button>");
                     $('#success > .alert-danger').append($("<strong>").text("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!"));
                     $('#success > .alert-danger').append('</div>');
-                   // $('#contactForm').trigger("reset");
+                    $('#contactForm').trigger("reset");
                 },
                 complete: function () {
                     setTimeout(function () {
