@@ -15,7 +15,7 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "https://susolar.herokuapp.com/email",
                 type: "POST",
                 data: {
                     name: name,
