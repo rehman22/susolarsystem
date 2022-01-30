@@ -10,12 +10,12 @@ $(function () {
             var email = $("input#email").val();
             var subject = $("input#subject").val();
             var message = $("textarea#message").val();
-
+console.log()
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "https://susolar.herokuapp.com/email",
+                url: "http://localhost:3000/email",
                 type: "POST",
                 data: {
                     name: name,
