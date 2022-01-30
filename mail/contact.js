@@ -20,7 +20,7 @@ console.log()
                 data: {
                     name: name,
                     email: email,
-                    subject: subject,
+                     
                     message: message
                 },
                 cache: false,
